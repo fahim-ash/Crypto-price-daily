@@ -1,0 +1,99 @@
+body {
+ 
+  
+  background: #e2e2e2;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.App {
+  background-color:transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 1rem;
+  
+  color: #444;
+  outline: none;
+  transition: .2s ease-in-out;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, .7),
+              -6px -6px 10px rgba(255, 255, 255, .5),
+              6px 6px 8px rgba(255, 255, 255, .075),
+              6px 6px 10px rgba(0, 0, 0, .15);
+}
+
+.headerContainer h1 {
+  color: #444;
+  font-family:inherit;
+  font-size: 40px;
+  font-weight: 350;
+  margin: 20px;
+}
+
+.headerContainer input {
+  padding: 5px 10px 5px 10px;
+  width: 280px;
+  height: 36px;
+  background-color: rgb(207, 206, 206);
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: rgb(15, 15, 15);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.buttonContainer img {
+  height: 30px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.buttonContainer img:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 0.2s;
+}
+
+::placeholder {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.headerContainer input:focus {
+  outline: none;
+  border-bottom: solid #def2f1 2px;
+  transform: scale(1.05);
+}
+
+.headerContainer input:hover {
+  transform: scale(1.05);
+  transition: all ease-in-out 0.2s;
+}
+
+.coinContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.loadingMssg {
+  color: white;
+}
